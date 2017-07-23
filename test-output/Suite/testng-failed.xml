@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Regression(failed)" parallel="tests">
+    <parameter name="port" value="4723"/>
+    <parameter name="platformVersion" value="6.0.1"/>
+    <parameter name="udid" value="ZY222XLTMH"/>
+    <parameter name="deviceName" value="ZY222XLTMH"/>
+    <classes>
+      <class name="com.scriptupdated.LoginTestUpdated">
+        <methods>
+          <include name="loginToAbofApplication"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.scriptupdated.LoginTestUpdated -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Suite] -->
